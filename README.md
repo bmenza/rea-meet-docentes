@@ -34,7 +34,7 @@ Cita sugerida (APA 7.ª edición):
 ├── index.html   # Estructura y contenido de la página (con un pequeño script para tema y compartir)
 ├── style.css    # Estilos: paleta accesible, diseño responsive, impresión
 ├── README.md    # Este archivo
-└── LICENSE      # Texto de la licencia CC BY 4.0 (agregarlo, ver más abajo)
+└── LICENSE      # Texto de la licencia CC BY 4.0
 ```
 
 No requiere instalación ni compilación. `index.html` y `style.css` deben estar en la misma carpeta. Las únicas dependencias externas son las tipografías de Google Fonts (*Atkinson Hyperlegible* y *Bricolage Grotesque*); si no cargan, se usan las fuentes del sistema.
