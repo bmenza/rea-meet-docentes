@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clases virtuales con Google Meet · REA para docentes de DGETP y DGES</title>
+<meta name="description" content="Recurso Educativo Abierto (CC BY 4.0) para docentes de DGETP y DGES de Uruguay: funcionalidades y ventajas de Google Meet para clases virtuales.">
+<meta name="author" content="Bruno Menza">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<nav aria-label="Secciones"><div class="wrap">
+<b>Google Meet</b>
+<button type="button" class="theme" id="tema" aria-pressed="false"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg><span>Modo</span></button>
+<div class="links"><a href="#ventajas">Ventajas</a><a href="#empezar">Empezar</a><a href="#funciones">Funciones</a><a href="#pizarra">Pizarra</a><a href="#grupos">Trabajo en grupos</a><a href="#seguridad">Seguridad</a><a href="#referencias">Referencias</a></div>
+</div></nav>
+<div class="toast" id="msg-compartir" role="status" aria-live="polite"></div>
+
+<header class="band"><div class="wrap hero">
+<div>
+<h1>Clases virtuales por <a href="https://meet.google.com/home" target="_blank">Google Meet</a></h1>
+<p class="lead">Guía abierta para docentes.</p>
+<div class="btns"><a class="btn" href="#empezar">Empezar con la primera clase</a><button type="button" class="btn alt" id="compartir"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 10.5l6.8-4M8.6 13.5l6.8 4"/></svg><span>Compartir este recurso</span></button></div>
+<p class="meta">Recurso Educativo Abierto · Autor: Bruno Menza · Licencia CC BY 4.0</p>
+</div>
+<figure>
+<svg viewBox="0 0 480 330" role="img" aria-labelledby="t1 d1">
+<title id="t1">Ilustración de una videollamada docente</title>
+<desc id="d1">Seis recuadros de participantes, uno de ellos destacado con el docente compartiendo la pantalla.</desc>
+<rect width="480" height="330" rx="18" fill="var(--soft)"/>
+<rect x="20" y="20" width="270" height="200" rx="12" fill="var(--brand)"/>
+<rect x="42" y="44" width="226" height="130" rx="6" fill="var(--surface)"/>
+<rect x="56" y="60" width="110" height="10" rx="3" fill="var(--hot)"/>
+<rect x="56" y="82" width="190" height="6" rx="3" fill="var(--line)"/><rect x="56" y="98" width="170" height="6" rx="3" fill="var(--line)"/><rect x="56" y="114" width="150" height="6" rx="3" fill="var(--line)"/>
+<circle cx="230" cy="146" r="14" fill="var(--brand)" opacity=".35"/>
+<text x="42" y="204" font-size="13" font-weight="700" fill="var(--brand-ink)" font-family="sans-serif">Docente presentando</text>
+<g fill="var(--surface)" stroke="var(--line)"><rect x="306" y="20" width="154" height="94" rx="12"/><rect x="306" y="126" width="154" height="94" rx="12"/><rect x="20" y="232" width="134" height="80" rx="12"/><rect x="166" y="232" width="134" height="80" rx="12"/><rect x="312" y="232" width="148" height="80" rx="12"/></g>
+<g fill="var(--brand)"><circle cx="383" cy="58" r="15"/><circle cx="383" cy="164" r="15"/><circle cx="87" cy="266" r="14"/><circle cx="233" cy="266" r="14"/><circle cx="386" cy="266" r="14"/></g>
+<g fill="var(--hot)"><path d="M371 76a12 12 0 0 1 24 0v8h-24z"/></g>
+<g fill="var(--brand)" opacity=".8"><path d="M371 182a12 12 0 0 1 24 0v8h-24z"/><path d="M75 283a12 12 0 0 1 24 0v8H75z"/><path d="M221 283a12 12 0 0 1 24 0v8h-24z"/><path d="M374 283a12 12 0 0 1 24 0v8h-24z"/></g>
+</svg>
+<figcaption>Figura 1. Esquema de una clase en Meet. Elaboración propia (Menza, 2026), CC BY 4.0.</figcaption>
+</figure>
+</div></header>
+
+<main id="contenido" tabindex="-1">
+<section id="intro"><div class="wrap split">
+<div>
+<h2>Para quién es este recurso</h2>
+<p>Está pensado para docentes de la Dirección General de Educación Técnico Profesional (DGETP) y de la Dirección General de Educación Secundaria (DGES), organismos de la Administración Nacional de Educación Pública (ANEP), que quieran dictar clases sincrónicas con Google Meet, desde la primera videollamada hasta la gestión de grupos.</p>
+<p>No hace falta experiencia previa. Cada sección se puede leer por separado y usar en el aula o en la sala de profesores.</p>
+</div>
+<div class="panel">
+<h3>Qué es un REA</h3>
+<p>Los Recursos Educativos Abiertos son materiales de enseñanza, aprendizaje e investigación disponibles públicamente, con licencias que permiten usarlos, adaptarlos y compartirlos (UNESCO, 2019). Este recurso se publica con licencia CC BY 4.0: podés copiarlo, modificarlo y redistribuirlo citando la autoría (Creative Commons, s. f.).</p>
+</div>
+</div></section>
+
+<section id="ventajas"><div class="wrap">
+<h2>Por qué usar Meet en tus clases</h2>
+<p>Google Meet forma parte de Google Workspace for Education, y se conecta con Calendar, Classroom y Drive (Google, s. f.-b). Eso reduce los pasos entre planificar y dar la clase.</p>
+<div class="adv">
+<div><h3>Se entra con un enlace</h3><p>Los estudiantes se unen desde el navegador, sin instalar programas.</p></div>
+<div><h3>Funciona con lo que ya usás</h3><p>La reunión se agenda desde Calendar y se comparte en Classroom.</p></div>
+<div><h3>Participación variada</h3><p>Chat, mano levantada, reacciones y subtítulos para distintos modos de participar.</p></div>
+<div><h3>Control para quien enseña</h3><p>El anfitrión decide quién entra, quién habla y quién presenta.</p></div>
+<div><h3>Funciona en celular</h3><p>Hay aplicación para Android e iOS, útil cuando la conectividad o los equipos son limitados.</p></div>
+<div><h3>Grabación de las clases</h3><p>Según la edición de la cuenta, se puede grabar la clase y guardarla en Drive.</p></div>
+</div>
+<div class="note"><p><strong>Importante:</strong> algunas funciones (grabación, salas para grupos, encuestas, asistencia) dependen de la edición de Workspace for Education y de la configuración de la institución. Verificá en tu cuenta qué tenés disponible (Google, s. f.-a).</p></div>
+</div></section>
+
+<section id="empezar"><div class="wrap">
+<h2>Tu primera clase, paso a paso</h2>
+<ol class="steps">
+<li><div><h3>Ingresá con tu cuenta institucional</h3><p>Abrí meet.google.com con la cuenta que te asignó tu centro, para acceder a las funciones educativas.</p></div></li>
+<li><div><h3>Crea una reunión o evento</h3><p>Usá “Nueva reunión” para una clase inmediata, o un evento en Google Calendar con videollamada de Meet para dejarla fijada en horario.</p></div></li>
+<li><div><h3>Compartí el enlace</h3><p>Pegalo en el aula virtual o en el grupo de la clase. Si usás CREA o Classroom, podés incluirlo en el curso para que quede siempre a mano.</p></div></li>
+<li><div><h3>Probá audio, video y conexión</h3><p>Antes de entrar, revisá micrófono y cámara. Conviene ingresar unos minutos antes y recibir a cada estudiante.</p></div></li>
+<li><div><h3>Dictá y cerrá la clase</h3><p>Presentá tu material, abrí espacios de participación y, al final, dejá las tareas escritas en el chat o en el aula virtual.</p></div></li>
+</ol>
+</div></section>
+
+<section id="funciones"><div class="wrap">
+<h2>Funciones que vas a usar todos los días</h2>
+<figure class="panel" style="margin-bottom:1.5rem">
+<svg viewBox="0 0 640 110" role="img" aria-labelledby="t2 d2">
+<title id="t2">Barra de controles de una videollamada</title>
+<desc id="d2">Esquema de seis controles: micrófono, cámara, subtítulos, mano levantada, presentar pantalla y salir de la llamada.</desc>
+<rect x="10" y="10" width="620" height="60" rx="30" fill="var(--soft)"/>
+<g fill="var(--brand)"><circle cx="70" cy="40" r="22"/><circle cx="170" cy="40" r="22"/><circle cx="270" cy="40" r="22"/><circle cx="370" cy="40" r="22"/><circle cx="470" cy="40" r="22"/></g>
+<circle cx="570" cy="40" r="22" fill="var(--danger)"/>
+<g fill="var(--brand-ink)"><rect x="64" y="28" width="12" height="18" rx="6"/><rect x="156" y="31" width="20" height="16" rx="3"/><path d="M176 36l8-5v18l-8-5z"/><rect x="258" y="31" width="24" height="16" rx="3"/><rect x="364" y="28" width="12" height="22" rx="4"/><rect x="458" y="30" width="24" height="16" rx="2"/></g><rect x="558" y="36" width="24" height="8" rx="4" fill="var(--danger-ink)"/>
+<g font-size="13" font-family="sans-serif" fill="var(--muted)" text-anchor="middle"><text x="70" y="96">Micrófono</text><text x="170" y="96">Cámara</text><text x="270" y="96">Subtítulos</text><text x="370" y="96">Mano</text><text x="470" y="96">Presentar</text><text x="570" y="96">Salir</text></g>
+</svg>
+<figcaption>Figura 2. Controles principales durante la llamada (esquema simplificado). Elaboración propia (Menza, 2026), CC BY 4.0. La interfaz real puede variar según dispositivo y versión.</figcaption>
+</figure>
+<h3 class="grp">Mostrar contenido</h3>
+<details open><summary>Compartir pantalla</summary>
+<p>Al presentar, elegís qué ven los demás: una pestaña, una ventana o toda la pantalla (Google, s. f.-a). Para clases conviene empezar por la pestaña o la ventana: tus notificaciones, correos y otras pestañas no se ven.</p>
+<figure style="margin-top:1rem">
+<svg viewBox="0 0 640 170" role="img" aria-labelledby="t4 d4">
+<title id="t4">Tres opciones al presentar pantalla</title>
+<desc id="d4">Esquema de tres recuadros: una pestaña, una ventana o toda la pantalla.</desc>
+<g fill="var(--surface)" stroke="var(--line)" stroke-width="2"><rect x="10" y="10" width="190" height="120" rx="12"/><rect x="225" y="10" width="190" height="120" rx="12"/><rect x="440" y="10" width="190" height="120" rx="12"/></g>
+<g fill="var(--soft)"><rect x="30" y="52" width="150" height="62" rx="6"/><rect x="245" y="44" width="150" height="70" rx="6"/><rect x="460" y="30" width="150" height="84" rx="6"/></g>
+<g fill="var(--brand)"><rect x="30" y="30" width="62" height="18" rx="6"/><rect x="245" y="26" width="90" height="12" rx="4"/><rect x="460" y="30" width="150" height="84" rx="6" opacity=".35"/></g>
+<rect x="10" y="10" width="190" height="120" rx="12" fill="none" stroke="var(--hot)" stroke-width="4"/>
+<g font-size="14" font-weight="700" font-family="sans-serif" fill="var(--ink)" text-anchor="middle"><text x="105" y="152">Una pestaña (recomendada)</text><text x="320" y="152">Una ventana</text><text x="535" y="152">Toda la pantalla</text></g>
+</svg>
+<figcaption>Figura 3. Opciones al presentar. Elaboración propia (Menza, 2026), CC BY 4.0.</figcaption>
+</figure>
+<p>Consejos: si el video o el audio vienen de una pestaña, marcá la opción de compartir sonido; antes de empezar, cerrá lo que no sea necesario; y mirá el material desde la ventana de Meet para saber qué está viendo el grupo.</p></details>
+<details><summary>Presentar desde Slides, Docs y Sheets</summary><p>Las aplicaciones de Google ofrecen un botón para presentar directamente en la reunión. Es práctico para clases con diapositivas, porque las notas del orador y la edición en vivo siguen a tu alcance. Los estudiantes pueden recibir el archivo en Drive para repasar después.</p></details>
+<details><summary>Pizarra</summary><p>Meet ya no incluye una pizarra propia. Mirá la sección <a href="#pizarra">Pizarra</a> para ver alternativas.</p></details>
+
+<h3 class="grp">Participación del grupo</h3>
+<details><summary>Chat, mano levantada y reacciones</summary><p>Ordenan la participación en grupos grandes: el estudiante levanta la mano para pedir la palabra y usa el chat para dudas breves sin interrumpir. Acordá al comienzo cuándo se usa cada uno.</p></details>
+<details><summary>Encuestas</summary><p>Disponibles en algunas ediciones. Sirven para verificar comprensión en vivo, elegir entre opciones o abrir una discusión con una pregunta rápida. Los resultados se pueden mostrar al grupo.</p></details>
+<details><summary>Preguntas y respuestas</summary><p>Permite que el grupo envíe preguntas y que las más votadas suban primero. Es útil en clases expositivas o con mucha gente, para responder con orden al final.</p></details>
+
+<h3 class="grp">Gestión de la clase</h3>
+<details><summary>Controles del anfitrión y coanfitriones</summary><p>Como anfitrión podés silenciar, quitar participantes, limitar el chat y controlar quién presenta. En algunas ediciones podés designar coanfitriones (por ejemplo, otro docente o un adscripto) para dividir la tarea (Google, s. f.-a).</p></details>
+<details><summary>Salas para grupos</summary><p>Divide la clase en equipos pequeños. Mirá <a href="#grupos">Trabajo en grupos pequeños</a>.</p></details>
+<details><summary>Asistencia</summary><p>En algunas ediciones, Meet genera un informe de quienes estuvieron en la clase, que puede ayudar con el registro. Confirmá con tu centro qué datos se pueden guardar y cómo.</p></details>
+<details><summary>Grabación y transcripción</summary><p>Cuando tu edición lo habilita, la clase se graba y se guarda en Drive para quienes faltaron. Avisá al grupo antes de grabar y consultá la normativa de tu centro sobre imagen y datos personales. Algunas ediciones también permiten transcripciones y notas generadas con inteligencia artificial.</p></details>
+<details><summary>Fijar y diseño de pantalla</summary><p>Podés fijar tu video, o el material, para verlo grande, y cambiar cómo se distribuyen los participantes según la actividad.</p></details>
+
+<h3 class="grp">Accesibilidad y conectividad</h3>
+<details><summary>Subtítulos y traducción</summary><p>Los subtítulos automáticos muestran lo que se dice en pantalla y ayudan a estudiantes con dificultades auditivas, con mala conexión de audio o que prefieren leer. En algunas ediciones también hay traducción de subtítulos.</p></details>
+<details><summary>Cancelación de ruido y calidad de video</summary><p>La reducción de ruido mejora el audio en hogares y espacios compartidos. Si la conexión falla, apagá las cámaras o bajá la calidad de video para sostener el audio, que es lo más importante en una clase.</p></details>
+<details><summary>Meet en el celular</summary><p>Con la aplicación móvil se puede participar casi con las mismas funciones básicas. Es una buena opción cuando el estudiantado no tiene computadora.</p></details>
+</div></section>
+
+<section id="pizarra"><div class="wrap">
+<h2>Pizarra: qué usar ahora</h2>
+<p>Google Jamboard, la pizarra que se integraba con Meet, se cerró a fines de 2024. Google propuso que Meet trabaje con herramientas de pizarra de terceros, como FigJam, Lucidspark y Miro (Google Workspace Updates, 2023). Estas son opciones prácticas para docentes. Mi recomendación es utilizar <a href="https://excalidraw.com/">Excalidraw</a></p>
+<div class="scroll"><table>
+<thead><tr><th>Opción</th><th>Cómo se usa</th><th>A tener en cuenta</th></tr></thead>
+<tbody>
+<tr><td data-label="Opción">Pizarra de terceros (FigJam, Lucidspark, Miro, Excalidraw)</td><td data-label="Cómo se usa">Se abre desde la reunión o se comparte el enlace al tablero.</td><td data-label="A tener en cuenta">Puede requerir cuenta y tener límites en el plan gratuito. Verificá la disponibilidad en tu cuenta institucional.</td></tr>
+<tr><td data-label="Opción">Google Slides o Docs compartido</td><td data-label="Cómo se usa">Una diapositiva en blanco o un documento donde escriben docente y estudiantes a la vez.</td><td data-label="A tener en cuenta">Ya forma parte de Workspace. Dale permiso de edición solo a quienes participan.</td></tr>
+<tr><td data-label="Opción">Tableta o celular con lápiz</td><td data-label="Cómo se usa">Escribís a mano en una aplicación de notas y compartís esa ventana.</td><td data-label="A tener en cuenta">Sirve para ecuaciones, esquemas y dibujos técnicos. Probalo antes de la clase.</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section id="grupos"><div class="wrap split">
+<div>
+<h2>Trabajo en grupos pequeños</h2>
+<p>Las salas para grupos (breakout rooms) dividen la clase en subgrupos para discutir, resolver un problema o armar un proyecto, y luego todos regresan a la sala principal. En la formación técnica y en talleres de Secundaria, sirven para trabajar por equipos con una consigna concreta.</p>
+<p>Dejá la consigna escrita en el chat antes de abrir las salas, indicá el tiempo disponible y pasá por cada una para acompañar. La disponibilidad depende de la edición de la cuenta (Google, s. f.-a).</p>
+</div>
+<figure>
+<svg viewBox="0 0 420 260" role="img" aria-labelledby="t3 d3">
+<title id="t3">Esquema de salas para grupos</title>
+<desc id="d3">Una sala principal se divide en tres salas pequeñas y luego se vuelve a reunir.</desc>
+<rect x="110" y="10" width="200" height="60" rx="12" fill="var(--brand)"/>
+<text x="210" y="46" text-anchor="middle" font-size="15" font-weight="700" font-family="sans-serif" fill="var(--brand-ink)">Sala principal</text>
+<g stroke="var(--muted)" stroke-width="2" fill="none"><path d="M170 70L70 150"/><path d="M210 70V150"/><path d="M250 70L350 150"/></g>
+<g fill="var(--surface)" stroke="var(--hot)" stroke-width="3"><rect x="10" y="150" width="120" height="70" rx="12"/><rect x="150" y="150" width="120" height="70" rx="12"/><rect x="290" y="150" width="120" height="70" rx="12"/></g>
+<g font-size="14" font-weight="700" font-family="sans-serif" fill="var(--ink)" text-anchor="middle"><text x="70" y="191">Grupo A</text><text x="210" y="191">Grupo B</text><text x="350" y="191">Grupo C</text></g>
+<text x="210" y="248" text-anchor="middle" font-size="13" font-family="sans-serif" fill="var(--muted)">Todos vuelven a la sala principal</text>
+</svg>
+<figcaption>Figura 4. Flujo de trabajo con salas para grupos. Elaboración propia (Menza, 2026), CC BY 4.0.</figcaption>
+</figure>
+</div></section>
+
+<section id="seguridad"><div class="wrap split">
+<div>
+<h2>Seguridad y convivencia en la clase virtual</h2>
+<p>Una clase ordenada empieza antes de entrar. Estas prácticas reducen interrupciones y cuidan la privacidad de los estudiantes.</p>
+<ul class="check">
+<li>Creá la reunión desde una cuenta institucional.</li>
+<li>No publiques el enlace en redes abiertas.</li>
+<li>Admití personalmente a quienes piden entrar.</li>
+<li>Usá los controles del anfitrión para silenciar o quitar participantes.</li>
+<li>Acordá normas de cámara, micrófono y chat al inicio del curso.</li>
+<li>Avisá cuando se grabe la clase.</li>
+</ul>
+</div>
+<div class="panel">
+<h3>Lista rápida antes de empezar</h3>
+<ul class="check" style="columns:1">
+<li>Conexión y batería revisadas</li>
+<li>Material abierto en pestañas listas</li>
+<li>Consigna de la clase escrita</li>
+<li>Enlace compartido en el aula virtual</li>
+<li>Plan alternativo si falla la conexión</li>
+</ul>
+<p style="margin:0;color:var(--muted)">Pensá siempre en estudiantes con poca conectividad: dejá el material disponible también fuera de la videollamada, por ejemplo en CREA u otra plataforma educativa.</p>
+</div>
+</div></section>
+
+<section id="referencias"><div class="wrap">
+<h2>Referencias</h2>
+<p>Formato APA 7.ª edición. Los sitios web cambian con frecuencia: al reutilizar este recurso, verificá los enlaces y actualizá las fechas de recuperación. Última revisión: 31 de octubre de 2026.</p>
+<ul class="refs">
+<li>Administración Nacional de Educación Pública. (s. f.). <em>Sitio institucional de ANEP</em>. Recuperado el 31 de octubre de 2026, de https://www.anep.edu.uy</li>
+<li>Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento. (s. f.). <em>Declaración de accesibilidad</em>. Recuperado el 31 de octubre de 2026, de https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/declaracion-accesibilidad</li>
+<li>Creative Commons. (s. f.). <em>Atribución 4.0 Internacional (CC BY 4.0)</em>. Recuperado el 31 de octubre de 2026, de https://creativecommons.org/licenses/by/4.0/deed.es</li>
+<li>Google. (s. f.-a). <em>Ayuda de Google Meet</em>. Google Ayuda. Recuperado el 31 de octubre de 2026, de https://support.google.com/meet</li>
+<li>Google. (s. f.-b). <em>Google Workspace for Education</em>. Google for Education. Recuperado el 31 de octubre de 2026, de https://edu.google.com</li>
+<li>Google Workspace Updates. (2023, 28 de septiembre). <em>The next phase of digital whiteboarding for Google Workspace</em> [Entrada de blog]. https://workspaceupdates.googleblog.com/2023/09/the-next-phase-of-digital-whiteboarding-for-google-workspace.html</li>
+<li>Menza, B. (2026). <em>Clases virtuales con Google Meet: guía para docentes de DGETP y DGES</em> [Recurso Educativo Abierto]. Licencia CC BY 4.0.</li>
+<li>Poder Ejecutivo. (2022, 22 de diciembre). <em>Decreto 406/022</em> [Reglamentación del artículo 88 de la Ley N.º 19.924 sobre accesibilidad digital]. IMPO. https://www.impo.com.uy/bases/decretos/406-2022</li>
+<li>UNESCO. (2019). <em>Recomendación sobre los recursos educativos abiertos (REA)</em>. https://www.unesco.org/es/legal-affairs/recommendation-open-educational-resources-oer</li>
+<li>World Wide Web Consortium. (2018). <em>Web content accessibility guidelines (WCAG) 2.1</em>. https://www.w3.org/TR/WCAG21/</li>
+</ul>
+</div></section>
+</main>
+
+<footer><div class="wrap lic">
+<a class="ccbadge" href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg" width="132" height="46" alt="Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)" loading="lazy"></a>
+<div>
+<p><strong>Clases virtuales con Google Meet: Guía para docentes </strong> © 2026 por Bruno Menza, bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener">Creative Commons Atribución 4.0 Internacional</a>. Podés copiar, adaptar y redistribuir este recurso, incluso con fines comerciales, citando la autoría e indicando si hiciste cambios.</p>
+<p><strong>Accesibilidad.</strong> Este sitio se diseñó siguiendo los requisitos técnicos de accesibilidad digital del Estado uruguayo (Decreto 406/022): pautas WCAG 2.1 de nivel A y AA, y los criterios AAA de contraste aumentado (1.4.6, relación mínima 7:1 en texto) y presentación visual (1.4.8) (Agencia de Gobierno Electrónico y Sociedad de la Información y del Conocimiento [AGESIC], s. f.; Poder Ejecutivo, 2022; World Wide Web Consortium, 2018). Incluye enlace para saltar al contenido, navegación por teclado, modo claro y oscuro, textos alternativos en las ilustraciones y adaptación a pantallas pequeñas. No cuenta con una auditoría externa: si encontrás una barrera, avisá a través del repositorio.</p>
+<p>Google y Google Meet son marcas de Google LLC. Este recurso es independiente y no está afiliado a Google, ANEP, DGETP ni DGES. Las ilustraciones son esquemas originales, no capturas oficiales.</p>
+</div>
+</div></footer>
+<script>
+(function(){var b=document.getElementById("tema"),r=document.documentElement,m=window.matchMedia("(prefers-color-scheme: dark)");
+function dark(){var t=r.getAttribute("data-theme");return t?t==="dark":m.matches}
+function paint(){var d=dark();b.setAttribute("aria-pressed",d);}
+try{var t=localStorage.getItem("tema");if(t)r.setAttribute("data-theme",t)}catch(e){}
+b.addEventListener("click",function(){var n=dark()?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("tema",n)}catch(e){}paint()});
+paint()})();
+</script>
+<script>
+(function(){var b=document.getElementById("compartir"),m=document.getElementById("msg-compartir");if(!b)return;
+var data={title:document.title,text:"Guía abierta (CC BY 4.0) para dar clases virtuales con Google Meet, para docentes de DGETP y DGES.",url:location.href.split("#")[0]};
+function say(t){m.textContent=t;setTimeout(function(){m.textContent=""},6000)}
+function copy(){
+ if(navigator.clipboard&&navigator.clipboard.writeText){return navigator.clipboard.writeText(data.url).then(function(){say("Enlace copiado. Ya podés pegarlo donde quieras.")},fallback)}
+ fallback()}
+function fallback(){var i=document.createElement("input");i.value=data.url;i.setAttribute("readonly","");i.style.position="fixed";i.style.opacity="0";document.body.appendChild(i);i.select();
+ try{document.execCommand("copy");say("Enlace copiado. Ya podés pegarlo donde quieras.")}catch(e){say("No se pudo copiar. El enlace es: "+data.url)}
+ document.body.removeChild(i)}
+b.addEventListener("click",function(){
+ if(navigator.share){navigator.share(data).catch(function(e){if(e&&e.name!=="AbortError")copy()})}else{copy()}});
+})();
+</script>
+</body>
+</html>
